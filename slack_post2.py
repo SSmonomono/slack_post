@@ -21,7 +21,7 @@ def process_time(start):
         "text": text
     }))
 
-# 関数ごとの時間を計算
+# 関数ごとの時間を計算（関数の前に設置）
 def fanc_time(func):
     @wraps(func) # fanc_time()の中に外部関数を取り込む
     def wrapper(*args, **kargs):
